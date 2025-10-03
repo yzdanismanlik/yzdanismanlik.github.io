@@ -1022,66 +1022,6 @@ section,
 }
 
 
-/*--------------------------------------------------------------
-# Publications Section
---------------------------------------------------------------*/
-.publications article {
-  background: var(--surface-color);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  height: 100%;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.publications .publication-img {
-  max-height: 240px;
-  margin: -30px -30px 15px -30px;
-  overflow: hidden;
-}
-
-.publications .publication-category {
-  font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  margin-bottom: 10px;
-}
-
-.publications .title {
-  font-size: 20px;
-  font-weight: 700;
-  padding: 0;
-  margin: 0 0 20px 0;
-}
-
-.publications .title a {
-  color: var(--heading-color);
-  transition: 0.3s;
-}
-
-.publications .title a:hover {
-  color: var(--accent-color);
-}
-
-.publications .publication-author-img {
-  width: 50px;
-  border-radius: 50%;
-  margin-right: 15px;
-}
-
-.publications .publication-author {
-  font-weight: 600;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  margin-bottom: 5px;
-}
-
-.publications .publication-date {
-  font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  margin-bottom: 0;
-}
-
-
-
 
 /*--------------------------------------------------------------
 # Services Section
@@ -1403,16 +1343,16 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Section
+# Figures Section
 --------------------------------------------------------------*/
-.portfolio .portfolio-filters {
+.figures .figures-filters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
 
-.portfolio .portfolio-filters li {
+.figures .figures-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 20px 10px 20px;
@@ -1426,33 +1366,33 @@ section,
   font-family: var(--heading-font);
 }
 
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
+.figures .figures-filters li:hover,
+.figures .figures-filters li.filter-active {
   color: var(--contrast-color);
   background-color: var(--accent-color);
 }
 
-.portfolio .portfolio-filters li:first-child {
+.figures .figures-filters li:first-child {
   margin-left: 0;
 }
 
-.portfolio .portfolio-filters li:last-child {
+.figures .figures-filters li:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
+  .figures .figures-filters li {
     font-size: 14px;
     margin: 0 0 10px 0;
   }
 }
 
-.portfolio .portfolio-item {
+.figures .figures-item {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio .portfolio-item .portfolio-info {
+.figures .figures-item .figures-info {
   opacity: 0;
   position: absolute;
   left: 12px;
@@ -1464,21 +1404,21 @@ section,
   padding: 15px;
 }
 
-.portfolio .portfolio-item .portfolio-info h4 {
+.figures .figures-item .figures-info h4 {
   font-size: 18px;
   font-weight: 600;
   padding-right: 50px;
 }
 
-.portfolio .portfolio-item .portfolio-info p {
+.figures .figures-item .figures-info p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   font-size: 14px;
   margin-bottom: 0;
   padding-right: 50px;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link,
-.portfolio .portfolio-item .portfolio-info .details-link {
+.figures .figures-item .figures-info .preview-link,
+.figures .figures-item .figures-info .details-link {
   position: absolute;
   right: 50px;
   font-size: 24px;
@@ -1488,17 +1428,17 @@ section,
   line-height: 0;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link:hover,
-.portfolio .portfolio-item .portfolio-info .details-link:hover {
+.figures .figures-item .figures-info .preview-link:hover,
+.figures .figures-item .figures-info .details-link:hover {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-item .portfolio-info .details-link {
+.figures .figures-item .figures-info .details-link {
   right: 14px;
   font-size: 28px;
 }
 
-.portfolio .portfolio-item:hover .portfolio-info {
+.figures .figures-item:hover .figures-info {
   opacity: 1;
   bottom: 0;
 }
@@ -1788,24 +1728,24 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details Section
+# figures Details Section
 --------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
+.figures-details .figures-details-slider img {
   width: 100%;
 }
 
-.portfolio-details .swiper-wrapper {
+.figures-details .swiper-wrapper {
   height: auto;
 }
 
-.portfolio-details .swiper-button-prev,
-.portfolio-details .swiper-button-next {
+.figures-details .swiper-button-prev,
+.figures-details .swiper-button-next {
   width: 48px;
   height: 48px;
 }
 
-.portfolio-details .swiper-button-prev:after,
-.portfolio-details .swiper-button-next:after {
+.figures-details .swiper-button-prev:after,
+.figures-details .swiper-button-next:after {
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(0, 0, 0, 0.15);
   font-size: 24px;
@@ -1818,36 +1758,36 @@ section,
   transition: 0.3s;
 }
 
-.portfolio-details .swiper-button-prev:hover:after,
-.portfolio-details .swiper-button-next:hover:after {
+.figures-details .swiper-button-prev:hover:after,
+.figures-details .swiper-button-next:hover:after {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 575px) {
 
-  .portfolio-details .swiper-button-prev,
-  .portfolio-details .swiper-button-next {
+  .figures-details .swiper-button-prev,
+  .figures-details .swiper-button-next {
     display: none;
   }
 }
 
-.portfolio-details .swiper-pagination {
+.figures-details .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details .swiper-pagination .swiper-pagination-bullet {
+.figures-details .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
 
-.portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
+.figures-details .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 
-.portfolio-details .portfolio-info h3 {
+.figures-details .figures-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1855,7 +1795,7 @@ section,
   position: relative;
 }
 
-.portfolio-details .portfolio-info h3:after {
+.figures-details .figures-info h3:after {
   content: "";
   position: absolute;
   display: block;
@@ -1866,26 +1806,26 @@ section,
   bottom: 0;
 }
 
-.portfolio-details .portfolio-info ul {
+.figures-details .figures-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li {
+.figures-details .figures-info ul li {
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
 }
 
-.portfolio-details .portfolio-info ul strong {
+.figures-details .figures-info ul strong {
   text-transform: uppercase;
   font-weight: 400;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 14px;
 }
 
-.portfolio-details .portfolio-info .btn-visit {
+.figures-details .figures-info .btn-visit {
   padding: 8px 40px;
   background: var(--accent-color);
   color: var(--contrast-color);
@@ -1893,28 +1833,28 @@ section,
   transition: 0.3s;
 }
 
-.portfolio-details .portfolio-info .btn-visit:hover {
+.figures-details .figures-info .btn-visit:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
-.portfolio-details .portfolio-description h2 {
+.figures-details .figures-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.figures-details .figures-description p {
   padding: 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item {
+.figures-details .figures-description .testimonial-item {
   padding: 30px 30px 0 30px;
   position: relative;
   background: color-mix(in srgb, var(--default-color), transparent 97%);
   margin-bottom: 50px;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .testimonial-img {
+.figures-details .figures-description .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50px;
   border: 6px solid var(--background-color);
@@ -1922,33 +1862,33 @@ section,
   margin: 0 10px 0 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item h3 {
+.figures-details .figures-description .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 15px 0 5px 0;
   padding-top: 20px;
 }
 
-.portfolio-details .portfolio-description .testimonial-item h4 {
+.figures-details .figures-description .testimonial-item h4 {
   font-size: 14px;
   color: #6c757d;
   margin: 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
+.figures-details .figures-description .testimonial-item .quote-icon-left,
+.figures-details .figures-description .testimonial-item .quote-icon-right {
   color: color-mix(in srgb, var(--accent-color), transparent 50%);
   font-size: 26px;
   line-height: 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-left {
+.figures-details .figures-description .testimonial-item .quote-icon-left {
   display: inline-block;
   left: -5px;
   position: relative;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
+.figures-details .figures-description .testimonial-item .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
@@ -1956,11 +1896,12 @@ section,
   transform: scale(-1, -1);
 }
 
-.portfolio-details .portfolio-description .testimonial-item p {
+.figures-details .figures-description .testimonial-item p {
   font-style: italic;
   margin: 0 0 15px 0 0 0;
   padding: 0;
 }
+
 
 
 
@@ -2566,3 +2507,175 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+
+
+
+@media (min-width:576px){ .snap-card{ flex-basis:48%; } } 
+@media (min-width:992px){ .snap-card{ flex-basis:31%; } } 
+
+/* Kart küçük dokunuşlar */ .research-projects .title a{ text-decoration:none; } 
+.research-projects .title a:hover{ text-decoration:underline; }
+
+
+
+/* Swiper slide içindeki kartların yüksekliği dengeli olsun */
+#research-projects .swiper-slide article { height: 100%; }
+#research-projects .swiper { padding-bottom: 32px; } /* pagination için alt boşluk */
+
+/* Swiper navigation buttons - şeffaf yuvarlak stil */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3); /* yarı şeffaf siyah */
+  color: #fff;                    /* ok rengi beyaz */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+  top: 50%;                /* dikey ortalama */
+  transform: translateY(-50%);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 18px;  /* ok simgesi boyutu */
+  font-weight: bold;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: rgba(0, 0, 0, 0.6); /* hover’da daha koyu */
+}
+
+
+/* Pasif dot */
+.swiper-pagination-bullet {
+  background: #d1e7dd;   /* açık yeşil/grimsi */
+  opacity: 1;            /* transparan olmasın */
+}
+
+/* Aktif dot */
+.swiper-pagination-bullet-active {
+  background: #198754;   /* ana yeşil */
+}
+
+
+/* Aktif tab */
+.nav-pills .nav-link.active {
+  background-color: #198754;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Normal tab */
+.nav-pills .nav-link {
+  color: #198754;
+}
+
+.nav-pills .nav-link:hover {
+  color: #145c32;
+}
+
+
+/* Work Areas kartları */
+.work-card {
+  padding: 20px 10px;
+  min-height: 120px;
+}
+
+.work-card .icon i {
+  font-size: 1.5rem; /* daha küçük ikon */
+  color: #198754;    /* tema yeşili */
+}
+
+.work-card h6 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+
+#work-areas .card {
+  border: 1px solid #e0e0e0; /* çok açık gri */
+  transition: all 0.3s ease;
+}
+
+#work-areas .card:hover {
+  border: 2px solid #198754; /* tema yeşili */
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Research project card sabitleme */
+.research-project-card {
+  height: 100%; /* tüm alanı kaplasın */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* İçerik düzeni */
+.research-project-card h2 {
+  min-height: 48px; /* başlık için sabit yükseklik */
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.research-project-card .research-project-meta {
+  margin-top: auto; /* alt kısma sabitle */
+}
+
+
+.research-project-card h2 a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;  /* max 2 satır */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+
+/* Publications kartlarını kompakt yap */
+#publications .publication-card{
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.06);
+  display:flex; flex-direction:column; gap:.5rem;
+}
+
+/* Kapak alanı: tüm görsel görünsün, yüksekliği sınırlı */
+#publications .publication-img{
+  width:100%;
+  height: 180px;                 /* küçültmek istersen 160-140 yapabilirsin */
+  background:#f8f9fa;
+  border-radius:10px;
+  overflow:hidden;
+  display:flex; align-items:center; justify-content:center;
+}
+#publications .publication-img img{
+  width:100%; height:100% !important;
+  object-fit: contain;           /* kırpma yok, tam görünüm */
+  object-position:center; display:block;
+}
+
+/* Başlık/metadata kompakt */
+#publications .publication-card h2{ font-size: .98rem; line-height:1.25; margin:6px 0 2px; }
+#publications .publication-card h2 a{
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+}
+#publications .publication-card .publication-meta p{ margin:0; font-size:.9rem; }
+
+/* Swiper hizalaması */
+#publications .swiper-wrapper{ align-items: stretch; }
+#publications .swiper-slide{ display:flex; }
+#publications .swiper{ padding-bottom: 28px; }
+
+
+
+
+
+
