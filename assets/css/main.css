@@ -2662,17 +2662,68 @@ section,
   object-position:center; display:block;
 }
 
-/* Başlık/metadata kompakt */
-#publications .publication-card h2{ font-size: .98rem; line-height:1.25; margin:6px 0 2px; }
-#publications .publication-card h2 a{
-  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+/* Publications: başlık ve meta fontları biraz küçült */
+#publications .title {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
-#publications .publication-card .publication-meta p{ margin:0; font-size:.9rem; }
 
-/* Swiper hizalaması */
-#publications .swiper-wrapper{ align-items: stretch; }
-#publications .swiper-slide{ display:flex; }
-#publications .swiper{ padding-bottom: 28px; }
+#publications .title a {
+  font-size: inherit;
+}
+
+/* Publications: swiper alanı ve pagination */
+#publications .swiper {
+  position: relative;
+  padding-bottom: 40px; /* altta noktalara yer aç */
+}
+
+#publications .swiper-pagination {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  text-align: center;
+  display: block;
+}
+
+#publications .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #198754;   /* yeşil */
+  opacity: 0.3;
+}
+
+#publications .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Publications başlıklarını daha vurgulu yap */
+#publications .title {
+  font-size: 1.22rem;        /* istersen 1.28 veya 1.3 yapabiliriz */
+  font-weight: 700;          /* KOYU başlık */
+  color: var(--heading-color); /* (KnightOne: neredeyse siyah) */
+  line-height: 1.35;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Link metni başlıkla aynı renk olsun */
+#publications .title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Hover efekti: başlık üzerine gelince yeşile dönebilir */
+#publications .title a:hover {
+  color: #198754;
+  text-decoration: underline;
+}
+
+
+
 
 
 
